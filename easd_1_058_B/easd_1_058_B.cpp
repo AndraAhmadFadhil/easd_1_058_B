@@ -44,7 +44,7 @@ void merge() {
 		cout << "Masukkan panjang element array: ";
 		cin >> n;
 
-		if (n <= 20)
+		if (n <= 78)
 			break;
 		else
 			cout << "\nMaksimum panjang array adalah 20" << endl;
@@ -55,7 +55,31 @@ void merge() {
 
 	for (int i = 0; i < n; i++)
 	{
-		cout << "<" << (i + 20 / 2) << ">";
+		cout << "<" << (i + 78 / 2) << ">";
 		cin >> arr[i];
 	}
+}
+
+void display() {
+	cout << "\------------------" << endl;
+	cout << "Sorted Array" << endl;
+	cout << "-------------------" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\nNumber of comparisions: " << cmp_count << endl;
+	cout << "Number of Data movements: " << mov_count << endl;
+}
+
+int main()
+{
+	input();
+	q_short(0, n - 1);
+	display();
+	system("pause");
+
+	return 0;
 }
