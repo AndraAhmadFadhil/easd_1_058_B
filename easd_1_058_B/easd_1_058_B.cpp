@@ -12,7 +12,7 @@ void input() {
 		cout << "Masukkan panjang element array :";
 		cin >> n;
 
-		if (n <= 20)
+		if (n <= 78)
 			break;
 		else
 			cout << "\nMaksimum panjang array adalah 0" << endl;
@@ -31,3 +31,31 @@ void input() {
 
 void swap(int x, int y)
 {
+	int temp;
+
+	temp = arr[x];
+	arr[x] = arr[y];
+	arr[y] = temp;
+}
+
+void merge() {
+	while (true)
+	{
+		cout << "Masukkan panjang element array: ";
+		cin >> n;
+
+		if (n <= 20)
+			break;
+		else
+			cout << "\nMaksimum panjang array adalah 20" << endl;
+	}
+	cout << "\n-------------------" << endl;
+	cout << "\nEnter Array Element" << endl;
+	cout << "\n-------------------" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << "<" << (i + 20 / 2) << ">";
+		cin >> arr[i];
+	}
+}
