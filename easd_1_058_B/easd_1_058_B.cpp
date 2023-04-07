@@ -19,4 +19,5 @@ void input() {
 	}
 
 	cout << "\n------------------" << endl;
+	cout << "\nEnter Array Elment" << endl;
 	
